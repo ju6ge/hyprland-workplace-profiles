@@ -1,0 +1,9 @@
+profiles:
+  laptop:
+    screens:
+    - identifier: e-DP1
+      scale: 1.0
+      rotation: Landscape
+      display_output_code: null
+      wallpaper: /tmp/test.png
+      position: Root
