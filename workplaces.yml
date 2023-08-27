@@ -1,9 +1,11 @@
+hyprland_config_file: "~/.config/hypr/display.conf"
 profiles:
   laptop:
     screens:
-    - identifier: e-DP1
+    - identifier: eDP-1
       scale: 1.0
       rotation: Landscape
       display_output_code: null
       wallpaper: /tmp/test.png
       position: Root
+      enabled: true
