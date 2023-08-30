@@ -9,3 +9,26 @@ profiles:
       wallpaper: /tmp/test.png
       position: Root
       enabled: true
+  desk_home_all:
+    screens:
+    - identifier: Dell Inc. DL12T83 
+      scale: 1.0
+      rotation: Landscape
+      display_output_code: null
+      wallpaper: /tmp/test.png
+      position: Root
+      enabled: true
+    - identifier: Dell Inc. 6YW9CH3 
+      scale: 1.0
+      rotation: Portrait
+      display_output_code: null
+      wallpaper: /tmp/test.png
+      position: !Left Dell Inc. DL12T83
+      enabled: true
+    - identifier: eDP-1
+      scale: 1.0
+      rotation: Landscape
+      display_output_code: null
+      wallpaper: /tmp/test.png
+      position: !LeftUnder Dell Inc. 6YW9CH3
+      enabled: true
