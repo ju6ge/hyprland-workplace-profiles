@@ -9,6 +9,9 @@ profiles:
       wallpaper: /tmp/test.png
       position: Root
       enabled: true
+    skripts:
+    - sudo systemctl start iwd
+    - sudo /etc/systemd/network/default.sh
   desk_home_all:
     screens:
     - identifier: Dell Inc. DL12T83 
@@ -32,6 +35,10 @@ profiles:
       wallpaper: /tmp/test.png
       position: !RightUnder Dell Inc. 6YW9CH3
       enabled: true
+    skripts:
+    - eww --config /home/judge/.config/eww/bar open-many bar0 bar1 bar2 
+    - /usr/bin/sudo systemctl stop iwd
+    - /usr/bin/sudo /etc/systemd/network/deskhome.sh
   desk_work:
     screens:
       - identifier: eDP-1
@@ -55,3 +62,7 @@ profiles:
         wallpaper: /tmp/test.png
         position: !Right Dell Inc. 7MT0188R2ATS
         enabled: true
+    skripts:
+    - eww --config /home/judge/.config/eww/bar open-many bar0 bar1 bar2 
+    - /usr/bin/sudo systemctl stop iwd
+    - /usr/bin/sudo /etc/systemd/network/sulzmann.sh
