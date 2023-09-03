@@ -1,4 +1,4 @@
-hyprland_config_file: "~/.config/hypr/display.conf"
+hyprland_config_file: "/home/judge/.config/hypr/monitor.conf"
 profiles:
   laptop:
     screens:
@@ -23,12 +23,35 @@ profiles:
       rotation: Portrait
       display_output_code: null
       wallpaper: /tmp/test.png
-      position: !Left Dell Inc. DL12T83
+      position: !Right Dell Inc. DL12T83
       enabled: true
     - identifier: eDP-1
       scale: 1.0
       rotation: Landscape
       display_output_code: null
       wallpaper: /tmp/test.png
-      position: !LeftUnder Dell Inc. 6YW9CH3
+      position: !RightUnder Dell Inc. 6YW9CH3
       enabled: true
+  desk_work:
+    screens:
+      - identifier: eDP-1
+        scale: 1.0
+        rotation: Landscape
+        display_output_code: null
+        wallpaper: /tmp/test.png
+        position: Root
+        enabled: true
+      - identifier: Dell Inc. 7MT0188R2ATS
+        scale: 1.0
+        rotation: Landscape
+        display_output_code: null
+        wallpaper: /tmp/test.png
+        position: !RightOver eDP-1
+        enabled: true
+      - identifier: Dell Inc. 7MT0193206RU
+        scale: 1.0
+        rotation: Landscape
+        display_output_code: null
+        wallpaper: /tmp/test.png
+        position: !Right Dell Inc. 7MT0188R2ATS
+        enabled: true
