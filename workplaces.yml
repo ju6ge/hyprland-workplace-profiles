@@ -12,26 +12,27 @@ profiles:
     skripts:
     - sudo systemctl start iwd
     - sudo /etc/systemd/network/default.sh
+    - /usr/bin/powerprofilesctl set power-saver
   desk_home_all:
     screens:
     - identifier: Dell Inc. DL12T83 
       scale: 1.0
       rotation: Landscape
-      display_output_code: null
+      display_output_code: Vga1
       wallpaper: /tmp/test.png
       position: Root
-      enabled: true
+      enabled: false
     - identifier: Dell Inc. 6YW9CH3 
       scale: 1.0
       rotation: Portrait
-      display_output_code: null
+      display_output_code: 0x11
       wallpaper: /tmp/test.png
       position: !Right Dell Inc. DL12T83
-      enabled: true
+      enabled: false
     - identifier: eDP-1
       scale: 1.0
       rotation: Landscape
-      display_output_code: null
+      display_output_code: Hdmi1
       wallpaper: /tmp/test.png
       position: !RightUnder Dell Inc. 6YW9CH3
       enabled: true
@@ -39,6 +40,7 @@ profiles:
     - eww --config /home/judge/.config/eww/bar open-many bar0 bar1 bar2 
     - /usr/bin/sudo systemctl stop iwd
     - /usr/bin/sudo /etc/systemd/network/deskhome.sh
+    - /usr/bin/powerprofilesctl set performance 
   desk_work:
     screens:
       - identifier: eDP-1
@@ -66,3 +68,4 @@ profiles:
     - eww --config /home/judge/.config/eww/bar open-many bar0 bar1 bar2 
     - /usr/bin/sudo systemctl stop iwd
     - /usr/bin/sudo /etc/systemd/network/sulzmann.sh
+    - /usr/bin/powerprofilesctl set performance 
